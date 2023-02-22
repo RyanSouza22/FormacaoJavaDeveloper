@@ -21,14 +21,17 @@ public class Usuario {
             System.out.println("Por favor inserir Agencia: ");
             novaConta.agencia = scanner.next();
 
-            System.out.println("Por favor inserir seu Nome completo: ");
+            System.out.println("Por favor inserir seu Primeiro Nome: ");
             novaConta.nomeCliente = scanner.next();
+
+            System.out.println("Por favor inserir seu Sobrenome: ");
+            novaConta.sobrenomeCliente = scanner.next();
 
             System.out.println("Por favor inserir Saldo da Conta: ");
             novaConta.saldo = scanner.nextDouble();
 
             System.out.println("");
-            System.out.printf("Olá " + novaConta.nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + novaConta.agencia + ", conta " + novaConta.numero + " e seu saldo R$ %.2f já está disponível para saque.", novaConta.saldo);
+            System.out.printf("Olá " + novaConta.nomeCliente.concat(" " + novaConta.sobrenomeCliente) + ", obrigado por criar uma conta em nosso banco, sua agência é " + novaConta.agencia + ", conta " + novaConta.numero + " e seu saldo R$ %.2f já está disponível para saque.", novaConta.saldo);
         }
     }
 }
