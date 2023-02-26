@@ -51,9 +51,5 @@ public class Main {
         System.out.println("Conteudo Concluidos: " + devRyan.getConteudosConcluidos());
         System.out.println("XP: " + devRyan.calcularTotalXp());
 
-
-
-
-
     }
 }
