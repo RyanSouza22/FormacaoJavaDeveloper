@@ -1,0 +1,18 @@
+Criando projeto maven:
+<diretorioOndeSeraCriadoOProjeto>mvn archetype:generate -Dgroup=nome.da.pasta -DartifactId=nome-do-projeto -Darchetype=maven-archetype-quickstart -DinteractiveMode=false
+
+
+Compilar:
+<diretorioDaOndeSeraCompilado>mvn compile
+
+
+Testar Aplicaçao:
+<diretorioDaOndeSeraCompilado>mvn test
+
+
+Empacotar/Criar Jar:
+<diretorioDaOndeSeraCompilado>mvn package
+
+
+Apagar Pasta Target:
+<diretorioDaOndeSeraCompilado>mvn clean
